@@ -128,7 +128,7 @@ switch(valor){
 //     break;
 // }
 
-let entrada = prompt("Ingrese un nombre");
+/* let entrada = prompt("Ingrese un nombre");
 
 while(entrada != "ESC"){
   switch (entrada) {
@@ -146,4 +146,19 @@ while(entrada != "ESC"){
   }
 
   entrada = prompt("Ingrese un nombre");
+} */
+
+let contador = 0;
+let numero = 10;
+
+for(let i = 2; i < numero; i++){
+  if(numero % i === 0){
+    contador = contador + 1;
+  }
+}
+
+if(contador > 0){
+  console.log("El numero no es primo");
+}else{
+  console.log("El numero es primo");
 }
