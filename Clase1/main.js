@@ -38,5 +38,5 @@ bloque
 // let nombre = prompt("Ingrese su nombre");
 // alert(nombre);
 
-let numero = parseInt(prompt("Ingrese un numero"));
-alert(numero + 5)
+// let numero = parseInt(prompt("Ingrese un numero"));
+// alert(numero + 5)`
