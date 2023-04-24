@@ -108,25 +108,25 @@ switch(valor){
 }
 */
 
-// let moneda = "usd";
+let moneda = "usd";
 
-// switch(moneda){
-//   case "ars":
-//     console.log("moneda de argentina");
-//     break;
+switch(moneda){
+  case "ars":
+    console.log("moneda de argentina");
+    break;
 
-//   case "cop":
-//     console.log("moneda de colombia");
-//     break;
+  case "cop":
+    console.log("moneda de colombia");
+    break;
 
-//   case "clp":
-//     console.log("moneda de chile");
-//     break;
+  case "clp":
+    console.log("moneda de chile");
+    break;
 
-//   default:
-//     console.log("moneda desconocida");
-//     break;
-// }
+  default:
+    console.log("moneda desconocida");
+    break;
+}
 
 /* let entrada = prompt("Ingrese un nombre");
 
@@ -148,17 +148,34 @@ while(entrada != "ESC"){
   entrada = prompt("Ingrese un nombre");
 } */
 
-let contador = 0;
-let numero = 10;
+// let contador = 0;
+// let numero = 10;
 
-for(let i = 2; i < numero; i++){
-  if(numero % i === 0){
-    contador = contador + 1;
+// for(let i = 2; i < numero; i++){
+//   if(numero % i === 0){
+//     contador = contador + 1;
+//   }
+// }
+
+// if(contador > 0){
+//   console.log("El numero no es primo");
+// }else{
+//   console.log("El numero es primo");
+// }
+
+function simetrico(numero){
+  let numeroString = `${numero}`;
+  let arreglo1 = numeroString.split("");
+  let arreglo2 = numeroString.split("").reverse();
+  let diferente = true;
+
+  console.log(arreglo1, arreglo2);
+  for(let index = 0; index < arreglo1.length; index++){
+    if(arreglo1[index] != arreglo2[index]){
+      diferente = false;
+    }
   }
+  return diferente;
 }
 
-if(contador > 0){
-  console.log("El numero no es primo");
-}else{
-  console.log("El numero es primo");
-}
+console.log(simetrico(1221))
