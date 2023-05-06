@@ -122,21 +122,25 @@ estructura de un arreglo
 //   console.log(item.precio);
 // }
 
-class Producto {
-  constructor(id, nombre, precio) {
-    this.id = id;
-    this.nombre = nombre;
-    this.precio = precio;
-  }
-}
+// class Producto {
+//   constructor(id, nombre, precio) {
+//     this.id = id;
+//     this.nombre = nombre;
+//     this.precio = precio;
+//   }
+// }
 
-const productos = [];
-const producto1 = new Producto(1, "camisa", 1000);
-const producto2 = new Producto(2, "media", 100);
-const producto3 = new Producto(3, "zapato", 1300);
+// const productos = [];
+// const producto1 = new Producto(1, "camisa", 1000);
+// const producto2 = new Producto(2, "media", 100);
+// const producto3 = new Producto(3, "zapato", 1300);
 
-productos.push(producto1);
-productos.push(producto2);
-productos.push(producto3);
+// productos.push(producto1);
+// productos.push(producto2);
+// productos.push(producto3);
 
-console.log(productos);
+// console.log(productos);
+
+const a = [1, 2, 3, 4];
+a.push(7, 6, 8);
+console.log(a);
