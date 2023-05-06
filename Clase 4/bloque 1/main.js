@@ -93,5 +93,50 @@ estructura de un arreglo
 // console.log(productos);
 
 // const productos = ["camisa", "zapato", "pantalon"];
-// productos.splice(1, 0, "media");
+// productos.splice(1, 1, "media");
 // console.log(productos);
+
+// const productos = ["camisa", "zapato", "pantalon"];
+
+// const eleminar = (nombre) => {
+//   let indice = productos.indexOf(nombre);
+
+//   if(indice != -1){
+//     productos.splice(indice, 1);
+//     console.log(productos);
+//   }
+// };
+
+// eleminar("camisa");
+
+//ARREGLOS + OBJETOS
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000 },
+//   { id: 2, nombre: "zapato", precio: 1350 },
+//   { id: 3, nombre: "media", precio: 750 },
+//   { id: 4, nombre: "gorra", precio: 345 },
+// ];
+
+// for(const item of productos){
+//   console.log(item.nombre);
+//   console.log(item.precio);
+// }
+
+class Producto {
+  constructor(id, nombre, precio) {
+    this.id = id;
+    this.nombre = nombre;
+    this.precio = precio;
+  }
+}
+
+const productos = [];
+const producto1 = new Producto(1, "camisa", 1000);
+const producto2 = new Producto(2, "media", 100);
+const producto3 = new Producto(3, "zapato", 1300);
+
+productos.push(producto1);
+productos.push(producto2);
+productos.push(producto3);
+
+console.log(productos);
