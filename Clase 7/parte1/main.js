@@ -113,11 +113,82 @@ operador1 || operador2 retorna operador1 cuando este representa algo verdadero d
 
 // console.log(usuario?.nombre || "El usuario no existe");
 
-const usuario = {
-  nombre: "John Doe ",
-  edad: 22,
-  cursos: null
-};
+// const usuario = {
+//   nombre: "John Doe",
+//   edad: 22,
+//   cursos: {
+//     javascript: "aprobado",
+//   },
+// };
 
-console.log(usuario?.cursos?.javascript || "La propiedad no existe");
-console.log(usuario?.cursos?.react || "La propiedad no existe");
+// console.log(usuario?.cursos?.javascript || "La propiedad no existe");
+// console.log(usuario?.cursos?.react || "La propiedad no existe");
+
+// const usuario = {
+//   nombre: "John Doe",
+//   edad: 22,
+//   direccion: "AV",
+// };
+
+// let nombre = usuario.nombre;
+// let edad = usuario.edad;
+// let direccion = usuario.direccion;
+
+// let { nombre, edad, direccion } = usuario;
+
+// console.log(nombre);
+
+// const usuario = {
+//   nombre: "John Doe",
+//   edad: 32,
+//   telefonos: {
+//     cel: 113334444,
+//     casa: null,
+//     trabajo: 113325555,
+//   },
+// };
+
+// const {
+//   nombre: nombrePersona,
+//   telefonos: { cel },
+// } = usuario;
+
+// console.log(nombrePersona, cel);
+
+// const usuarios = [
+//   { id: 1, nombre: "juan" },
+//   { id: 2, nombre: "andres" },
+//   { id: 3, nombre: "octavio" },
+//   { id: 4, nombre: "pedro" },
+// ];
+
+// let usuario = usuarios[0];
+
+// let { id, nombre } = usuario;
+
+// usuarios.forEach((item) => {
+//   const { id, nombre } = item;
+
+//   console.log(id, nombre);
+// });
+
+// const desestructurar = ({ edad, nombre }) => {
+//   console.log(edad, nombre);
+// };
+
+// const usuario = {
+//   nombre: "John Doe",
+//   edad: 32,
+//   telefonos: {
+//     cel: 113334444,
+//     casa: null,
+//     trabajo: 113325555,
+//   },
+// };
+
+// desestructurar(usuario);
+
+// const nombres = ["Juan", "Julieta", "Carlos", "Mariela"];
+
+// const [a, , b] = nombres;
+// console.log(a, b);
