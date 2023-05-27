@@ -127,3 +127,6 @@ if(condicion1){
 // for(const item of numeros){
 //   console.log(item);
 // }
+
+import { nombre } from "./funciones.js";
+nombre();
