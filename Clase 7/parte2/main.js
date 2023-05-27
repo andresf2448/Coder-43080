@@ -48,3 +48,82 @@
 
 // console.log(sumar(4, 5, 6, 8, 8, 4, 2, 2));
 // console.log(sumar(4, 5));
+
+// const mensaje = () => {
+//   console.log("hola");
+// };
+// let edad = 20;
+
+// edad >= 18 ? mensaje() : null;
+
+/* 
+condicionales
+
+if(condicion1){
+  codigo a ejecutar cuando la condición1 es verdadera
+}else if(condicion2){
+  codigo a ejecutar cuando la condicion2 es verdadera
+}else{
+  codigo a ejecutar cuando ninguna de las condiciones es verdadera
+}
+*/
+
+// let nombre = prompt("Ingrese el usuario");
+
+// while (usuario != "pepito") {
+//   alert("usuario incorrecto");
+//   nombre = prompt("Ingrese el usuario");
+// }
+
+// alert("Bienvenido");
+
+//FUNCIONES
+// function sumar(x, y) {
+//   return x + y;
+// }
+
+// const sumar = (x, y) => {
+//   return x + y;
+// };
+
+// const sumar = (x, y) => x + y;
+// () => "hola";
+// x => x + 5;
+
+// function Persona(nombre, edad) {
+//   this.nombre = nombre;
+//   this.edad = edad;
+//   this.hablar = function () {
+//     console.log(`Hola soy ${this.nombre}`);
+//   };
+// }
+
+// class Persona {
+//   constructor(nombre, edad) {
+//     this.nombre = nombre;
+//     this.edad = edad;
+//     this.array = [];
+//   }
+
+//   hablar() {
+//     console.log(`Hola soy ${this.nombre}`);
+//   }
+// }
+
+// const persona1 = new Persona("juan", 45);
+// console.log(persona1);
+
+// forEach
+// filter
+// map
+// find
+
+// const numeros = [5, 4, 3, 56];
+
+// numeros.forEach(item => {
+//   console.log(item);
+// });
+
+// for(const item of numeros){
+//   console.log(item);
+// }
